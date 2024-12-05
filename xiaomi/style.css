@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.clicked{
+    border-bottom: 2px solid #ff4d00;
+    color: #ff4d00;
+    font-weight: 700;
+}
+
+.head{
+    font-size: 1.75vw;
+    margin-top: 1vw;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* navbar */
+
+.nav{
+    height: 7.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* navbar 1 */
+.nav1{
+    height: 8vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: 1.2vw;
+}
+
+.home img{
+    width: 30px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+.nav1 a:hover{
+    color: #ff4d00;
+    border-bottom: 2px solid #ff4d00;
+}
+
+/* navbar2 */
+
+.nav2{
+    height: 8vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: 1.2vw;
+}
+
+.nav2 a:hover{
+    color: #ff4d00
+}
+
+.profile_i img{
+    width: 30px;
+}
+
+.search_i img{
+    width: 30px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* main */
+
+/* slider */
+
+.slider{
+    width: 100%;
+    height: 75vh;
+    background-image: url("slider1.webp");
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+}
+
+.slider:hover{
+    cursor: pointer;    
+}
+
+.s1{
+    margin-top: 8vw;
+    margin-left: 8vw;
+    background-color: black;
+    width: fit-content;
+    color: white;
+    font-size: 1.8vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.s2{
+    margin-top: 1vw;
+    margin-left: 8vw;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+.s3{
+    margin-top: 2vw;
+    margin-left: 8vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+.s4{
+    margin-top: 0.5vw;
+    margin-left: 8vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.s5{
+    margin-top: 4vw;
+    margin-left: 8vw;
+    background-color: #191919;
+    width: fit-content;
+    color: white;
+    font-size: 1vw;
+    border-radius: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+}
+
+/* feature products */
+
+.featuredProducts{
+    display: flex;
+    margin-top: 10vh;
+    height: 10vh;
+    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* slidebar 2 */
+
+.sbutton{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    font-size: 1.1vw;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.sbutton:hover{
+    cursor:pointer;
+}
+
+
+.slidebar2{
+    display: flex;
+    height:5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* more products */
+
+.moreProducts{
+    width:90vw;
+    margin: auto;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 0.5vw;
+}
+
+/* more products div 1 */
+.mpDiv1{
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.mpDiv1img{
+    overflow: hidden;
+    width: 50%;
+    background-color: black;
+}
+
+.mpDiv1img img{
+    scale: 1.2;
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: 600ms;
+}
+
+.mpDiv1img img:hover{
+    scale: 1.25;
+}
+
+.mpText{
+    display: flex;
+    background-color: #f7f7f7;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10vw; */
+    width: 50%;
+}
+
+.mpText2{
+    margin-top: 1vw;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+
+.mpText3{
+    margin-top: 1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+}
+
+.mpDiv1Learn{
+    position: absolute;
+    top: 23vw;
+    opacity: 0;
+    background-color: #191919;
+    color: white;
+    font-size: 1vw;
+    border-radius: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    transition: 600ms;
+}
+
+.mpDiv1Hover{
+    position: absolute;
+    top: 18vw;
+    opacity: 1;
+}
+
+/* more products div 2 */
+.mpDiv2{
+    margin: auto;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mpDivs{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    background-color: #f7f7f7;
+    width: 19.5%;
+    height: 45vh;
+    padding: 2vw;
+    position: relative;
+}
+
+.mpDivs:hover{
+    cursor: pointer;
+}
+
+.mpDivs img{
+    transition: 600ms;
+}
+
+.mpLearn {
+    position: absolute;
+    top: 24vw;
+    opacity: 0;
+    background-color: #191919;
+    color: white;
+    font-size: 1vw;
+    border-radius: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    transition: 600ms;
+}
+
+.mpDivsHover{
+    position: absolute;
+    top: 20.5vw;
+    opacity: 1;
+}
+
+
+.mpHead{
+    top: 17vw;
+    position: absolute;
+    font-size: 1.75vw;
+    margin-top: 1vw;
+    font-weight: bold;
+}
+
+.mpDesc{
+    position: absolute;
+    top: 20vw;
+    margin-top: 1vw;
+    font-size: 1.1vw;
+    text-align: center;
+    transition: 400ms;
+}
+
+.mpDivsTextHover{
+    top: 19vw;
+    opacity: 0;
+}
+
+/* support section */
+
+.support_container{
+    margin: auto;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.supportBox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: 45vh;
+    padding: 2vw;
+}
+
+.support_text{
+    display: flex;
+    justify-content: center;
+    margin-top:20vh;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.icon{
+    font-size: 4vw;
+    color: #898989;
+}
+
+.sHover{
+    color: #ff7819;
+    cursor: pointer;
+}
+
+/* hower functions */
+
+/* classlists */
+
+
+/* animations */
+
